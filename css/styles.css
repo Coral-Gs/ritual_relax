@@ -19,7 +19,7 @@ p {
 
 /*Estilos de los enlaces*/
 a {
-  color: #343a3f;
+  color: #28112b;
 }
 a:hover {
   color: #76b6b9;
@@ -39,7 +39,7 @@ a:hover {
 /*Estilos del menú de navegación*/
 .navbar {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   text-align: right;
 }
 
@@ -56,6 +56,8 @@ a:hover {
 /*Media queries para modificar la apariencia de elementos 
 en función del tamaño de la pantalla*/
 
+/*Tamaño XS y SM (<767px) -> Menú de navegación centrado */
+
 @media (max-width: 767px) {
   .navbar {
     display: block;
@@ -64,9 +66,9 @@ en función del tamaño de la pantalla*/
   }
 }
 
-/*Reduzco el tamaño de la letra para el tamaño MD (entre 768px y 992px) 
-de modo que el título y subtítulo aparezca en una sola línea, manteniendo 
-la distribución del tamaño LG */
+/*Tamaño MD (768px - 992px) -> Reduzco el tamaño de la letra 
+de modo que el título, subtítulo y enlaces aparezcan en una sola línea, 
+manteniendo la distribución del tamaño LG */
 
 @media (min-width: 768px) and (max-width: 991.9px) {
   h1 {
@@ -74,5 +76,13 @@ la distribución del tamaño LG */
   }
   p {
     font-size: 16px;
+  }
+}
+
+/*Tamaño LG (>992px) -> Aumento las dimensiones del logo */
+
+@media (min-width: 992px) {
+  .logo {
+    max-width: 120px;
   }
 }
