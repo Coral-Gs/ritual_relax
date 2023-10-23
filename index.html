@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Ritual Relax</title>
+
+    <!-- Enlace de CSS de Bootstrap v4.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- He utilizado Bootstrap v4.0 porque soporta tanto el carousel como el 
+      Jumbotron. Bootstrap 5 no incluye el componente Jumbotron, aunque se podría
+      crear manualmente con CSS.
+    -->
+
+    <!-- Enlace de mi hoja de estilo CSS externa -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Para que funcione Bootstrap correctamente es necesario que todo el contenido
+    esté dentro de un div de clase "container". He utilizado el sistema de rejillas
+    para estructurar el contenido, usando divs con la clase "row" para crear las filas
+    y la clase "col" para columnas, especificando el ancho de cada columna 
+    según el tamaño de la pantalla. Por ejemplo, "col-sm-12" hace referencia al tamaño
+    SM (>=576px <767px) y es 12 el número de columnas que ocupa el elemento que irá dentro
+    de ese div. Puesto que el máximo posible son 12 espacios, ocupará la fila entera. -->
+
+    <div class="container">
+      <div class="row" id="header">
+        <!-- Logo de la página web -->
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="logo-container">
+            <img class="logo" src="img/logo.png" alt="logo" />
+          </div>
+        </div>
+
+        <!-- Título y subtítulo -->
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <h1>RITUAL RELAX</h1>
+          <p>Meditación | Yoga | Bienestar</p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <!-- Menú de navegación - Componente de Bootstrap-->
+          <div class="navbar">
+            <div class="pos-f-t">
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-white p-4">
+                  <h4 class="text-dark">¡Bienvenid@!</h4>
+                  <div class="text-dark">
+                    <!-- Enlaces del menú de navegación-->
+                    <a
+                      href="https://www.youtube.com/channel/UCZ0c-fe_EH6GFenyd7ku6Yw"
+                      target="_blank"
+                      >Meditaciones guiadas</a
+                    >
+                  </div>
+                  <div class="text-dark"><a href="#">Clases de yoga</a></div>
+                  <div class="text-dark"><a href="#">Contacto</a></div>
+                </div>
+              </div>
+              <nav class="navbar navbar-light bg-white">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarToggleExternalContent"
+                  aria-controls="navbarToggleExternalContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Carousel - Componente de Bootstrap. Nos permite incluir las imágenes
+        que queramos dentro del atribuuto "src", donde debemos especificar la ruta,
+        para luego poder visualizarlas e ir pasando e una a otra. Con el atributo
+      "alt" se puede incluir un texto alternativo en caso de que la imagen no esté
+    disponible o haya un error en la visualización-->
+
+        <div class="col-sm-12 col-lg-12">
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block w-100"
+                      src="img/mindf.jpg"
+                      alt="mindfulness"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100"
+                      src="img/flowers.jpg"
+                      alt="flowers"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/yoga.jpg" alt="yoga" />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100"
+                      src="img/rocks.jpg"
+                      alt="rocks"
+                    />
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Espacios en blanco-->
+      <br />
+      <br />
+
+      <!-- Jumbotron - Componente de Bootstrap. Es un elemento que nos permite
+      destacar un texto que puede ser de caracter publicitario e incluir una 
+      llamada para que el usuario realice una acción concreta (registrarse, 
+      comprar un producto, visitar un artículo o web, etc.)-->
+      <div class="row">
+        <div class="col-sm-12 col-lg-12">
+          <div class="jumbotron">
+            <h1 class="display-4">Meditaciones Guiadas</h1>
+            <p class="lead">
+              Comienza hoy tu viaje de meditación para encontrar la paz y la
+              serenidad que necesitas. Con tan solo unos minutos al día podrás
+              descubrir el poder del presente y los beneficios de cultivar una
+              mente serena y enfocada para afrontar los retos de la vida.
+            </p>
+            <hr class="my-4" />
+            <p>¿Estás preparad@ para vivir con más calma y plenitud?</p>
+            <p class="lead">
+              <a
+                class="btn btn-primary btn-lg"
+                href="https://www.youtube.com/channel/UCZ0c-fe_EH6GFenyd7ku6Yw"
+                target="_blank"
+                role="button"
+                >Empieza aquí</a
+              >
+              <!--El atributo "target" con el valor "_blank" abre el enlace
+              en una nueva pestaña del navegador para que el usuario no abandone
+              nuestra web directamente-->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Enlaces de Jquery y Javascript necesarios para algunas de las
+    funcionalidades dee Bootstrap. Por ejemplo para poder pasar 
+    las imágenes del carousel con la flecha o para que pasen de manera automática-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

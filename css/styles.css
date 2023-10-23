@@ -1,0 +1,78 @@
+body {
+  text-align: center;
+}
+
+/*Estilos del título h1*/
+
+h1 {
+  color: #217d82;
+  font-family: "Times New Roman", Times, serif;
+  padding: 20px 0 0 0;
+}
+
+/*Estilos del párrafo*/
+p {
+  color: #217d82;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+/*Estilos de los enlaces*/
+a {
+  color: #343a3f;
+}
+a:hover {
+  color: #76b6b9;
+  text-decoration: none;
+}
+
+/*Estilos del encabezado*/
+#header {
+  padding: 40px 0 0 0;
+}
+
+/*Estilos del logo*/
+.logo {
+  max-width: 100px;
+}
+
+/*Estilos del menú de navegación*/
+.navbar {
+  display: block;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/*Estilos del carusel*/
+.carousel-container {
+  padding: 30px 0 0 0;
+  margin: auto;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+/*Media queries para modificar la apariencia de elementos 
+en función del tamaño de la pantalla*/
+
+@media (max-width: 767px) {
+  .navbar {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/*Reduzco el tamaño de la letra para el tamaño MD (entre 768px y 992px) 
+de modo que el título y subtítulo aparezca en una sola línea, manteniendo 
+la distribución del tamaño LG */
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+  h1 {
+    font-size: 29px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
