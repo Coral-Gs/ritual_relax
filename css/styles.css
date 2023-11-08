@@ -55,40 +55,6 @@ a:hover {
   margin: auto;
 }
 
-/*Media queries para modificar la apariencia de elementos 
-en función del tamaño de la pantalla*/
-
-/*Tamaño XS y SM (<767px) -> Menú de navegación centrado */
-
-@media (max-width: 767px) {
-  .navbar {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-/*Tamaño MD (768px - 992px) -> Reduzco el tamaño de la letra 
-de modo que el título, subtítulo y enlaces aparezcan en una sola línea, 
-manteniendo la distribución del tamaño LG */
-
-@media (min-width: 768px) and (max-width: 991.9px) {
-  h1 {
-    font-size: 29px;
-  }
-  p {
-    font-size: 16px;
-  }
-}
-
-/*Tamaño LG (>992px) -> Aumento las dimensiones del logo */
-
-@media (min-width: 992px) {
-  .logo {
-    max-width: 120px;
-  }
-}
-
 /*ESTILOS MEDITACIONES.HTML */
 
 .container-meds {
@@ -122,4 +88,52 @@ manteniendo la distribución del tamaño LG */
 .video-container video {
   width: 80%;
   height: auto;
+}
+
+/*ESTILOS GALERIA.HTML */
+
+#img-ppal {
+  border-radius: 5px;
+  width: 80%;
+}
+
+.miniaturas img {
+  border-radius: 5px;
+  width: 130px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/*Media queries para modificar la apariencia de elementos 
+en función del tamaño de la pantalla*/
+
+/*Tamaño XS y SM (<767px) -> Menú de navegación centrado */
+
+@media (max-width: 767px) {
+  .navbar {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/*Tamaño MD (768px - 992px) -> Reduzco el tamaño de la letra 
+de modo que el título, subtítulo y enlaces aparezcan en una sola línea, 
+manteniendo la distribución del tamaño LG */
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+  h1 {
+    font-size: 29px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/*Tamaño LG (>992px) -> Aumento las dimensiones del logo */
+
+@media (min-width: 992px) {
+  .logo {
+    max-width: 120px;
+  }
 }
