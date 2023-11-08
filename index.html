@@ -28,9 +28,7 @@
     esté dentro de un div de clase "container". He utilizado el sistema de rejillas
     para estructurar el contenido, usando divs con la clase "row" para crear las filas
     y la clase "col" para columnas, especificando el ancho de cada columna 
-    según el tamaño de la pantalla. Por ejemplo, "col-sm-12" hace referencia al tamaño
-    SM (>=576px <767px) y es 12 el número de columnas que ocupa el elemento que irá dentro
-    de ese div. Puesto que el máximo posible son 12 espacios, ocupará la fila entera. -->
+    según el tamaño de la pantalla. -->
 
     <div class="container">
       <div class="row" id="header">
@@ -46,8 +44,9 @@
           <h1>RITUAL RELAX</h1>
           <p>Meditación | Yoga | Bienestar</p>
         </div>
+
+        <!-- Menú de navegación - Componente de Bootstrap-->
         <div class="col-sm-12 col-md-4 col-lg-4">
-          <!-- Menú de navegación - Componente de Bootstrap-->
           <div class="navbar">
             <div class="pos-f-t">
               <div class="collapse" id="navbarToggleExternalContent">
@@ -55,13 +54,11 @@
                   <h4 class="text-dark">¡Bienvenid@!</h4>
                   <div class="text-dark">
                     <!-- Enlaces del menú de navegación-->
-                    <a
-                      href="https://www.youtube.com/channel/UCZ0c-fe_EH6GFenyd7ku6Yw"
-                      target="_blank"
-                      >Meditaciones guiadas</a
-                    >
+                    <a href="content/meditaciones.html">Meditaciones guiadas</a>
                   </div>
-                  <div class="text-dark"><a href="#">Clases de yoga</a></div>
+                  <div class="text-dark">
+                    <a href="content/galeria.html">Clases de yoga</a>
+                  </div>
                   <div class="text-dark"><a href="#">Contacto</a></div>
                 </div>
               </div>
@@ -152,7 +149,7 @@
           </div>
         </div>
       </div>
-      <!--Espacios en blanco-->
+      <br />
       <br />
       <br />
 

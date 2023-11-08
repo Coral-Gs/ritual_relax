@@ -1,3 +1,5 @@
+/*Estilos globales*/
+
 body {
   text-align: center;
 }
@@ -85,4 +87,39 @@ manteniendo la distribución del tamaño LG */
   .logo {
     max-width: 120px;
   }
+}
+
+/*ESTILOS MEDITACIONES.HTML */
+
+.container-meds {
+  display: block;
+  margin: 0;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title {
+  font-weight: 900;
+}
+.tracks-container {
+  padding: 100px;
+  margin: 80px 0 0 0;
+  text-align: center;
+}
+
+#navbar {
+  text-align: right;
+}
+
+.video-container {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 80%;
+  height: auto;
 }

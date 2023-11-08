@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Ritual Relax</title>
+
+    <!-- Enlace de CSS de Bootstrap v4.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- He utilizado Bootstrap v4.0 porque soporta tanto el carousel como el 
+      Jumbotron. Bootstrap 5 no incluye el componente Jumbotron, aunque se podría
+      crear manualmente con CSS.
+    -->
+
+    <!-- Enlace de mi hoja de estilo CSS externa -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  </head>
+  <body class="container-meds">
+    <!-- Para que funcione Bootstrap correctamente es necesario que todo el contenido
+    esté dentro de un div de clase "container". He utilizado el sistema de rejillas
+    para estructurar el contenido, usando divs con la clase "row" para crear las filas
+    y la clase "col" para columnas, especificando el ancho de cada columna 
+    según el tamaño de la pantalla. -->
+
+    <div class="container">
+      <div class="row" id="header">
+        <!-- Menú de navegación - Componente de Bootstrap-->
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div id="navbar">
+            <div class="pos-f-t">
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4">
+                  <h4 class="text-dark">¡Bienvenid@!</h4>
+                  <div class="text-dark">
+                    <!-- Enlaces del menú de navegación-->
+                    <a href="#">Meditaciones guiadas</a>
+                  </div>
+                  <div class="text-dark">
+                    <a href="./galeria.html">Clases de yoga</a>
+                  </div>
+                  <div class="text-dark"><a href="#">Contacto</a></div>
+                  <div class="text-dark">
+                    <a href="../index.html">Inicio</a>
+                  </div>
+                </div>
+              </div>
+              <nav class="navbar navbar-light">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarToggleExternalContent"
+                  aria-controls="navbarToggleExternalContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="tracks-container">
+            <div class="track">
+              <!-- Inserción de audios y controles-->
+              <p><strong>Meditación de la mañana</strong></p>
+              <audio controls>
+                <source src="../src/morning-med.mp3" type="audio/ogg" />
+              </audio>
+            </div>
+            <br /><br />
+            <div class="track">
+              <p><strong>Meditación para la claridad mental</strong></p>
+              <audio controls>
+                <source src="../src/focus-med.wav" type="audio/ogg" />
+              </audio>
+            </div>
+            <br /><br />
+            <div class="track">
+              <p><strong>Meditación de la noche</strong></p>
+              <audio controls>
+                <source src="../src/night-med.wav" type="audio/ogg" />
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="video-container">
+            <!-- Inserción de vídeo y controles-->
+            <video
+              controls
+              width="640"
+              height="360"
+              poster="../img/sleep-med.png"
+            >
+              <source src="../src/sleep-med.mp4" type="video/mp4" />
+              <p>Tu navegador no admite la etiqueta de video.</p>
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+    </div>
+    <!--Enlaces de Jquery y Javascript necesarios para algunas de las
+    funcionalidades dee Bootstrap. Por ejemplo para poder pasar 
+    las imágenes del carousel con la flecha o para que pasen de manera automática-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
